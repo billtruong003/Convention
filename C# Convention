@@ -1,0 +1,106 @@
+# C# Naming Conventions
+
+## 1. Naming Classes, Methods, and Variables
+
+### Classes:
+- Use **PascalCase**: Class names should start with a capital letter, and subsequent words should also be capitalized.
+  - Example: `MyClass`, `CustomerManager`
+
+- Class names should generally be nouns or noun phrases.
+  - Example: `Order`, `CustomerAccount`
+
+### Methods:
+- Use **PascalCase**: Method names should also follow PascalCase, starting with a capital letter.
+  - Example: `CalculateTotal()`, `ProcessOrder()`
+
+- Method names should be verbs or verb phrases, reflecting the action they perform.
+  - Example: `SendMessage()`, `GetUser()`
+
+### Variables:
+- Use **camelCase**: Variable names should start with a lowercase letter, and subsequent words should be capitalized.
+  - Example: `customerName`, `totalAmount`
+
+- Variable names should be meaningful and descriptive, clearly conveying the purpose of the variable.
+  - Example: `age`, `firstName`, `totalPrice`
+
+- For **constant values**, use **PascalCase** and prefix them with `const`.
+  - Example: `const int MaxRetries = 5;`
+
+### Fields:
+- Use **camelCase**: Private fields should start with a lowercase letter, typically prefixed with an underscore (`_`).
+  - Example: `_orderRepository`, `_logger`
+
+- Public fields should be avoided; use properties instead.
+
+### Properties:
+- Use **PascalCase**: Property names follow PascalCase, similar to class and method names.
+  - Example: `FirstName`, `TotalAmount`
+
+- Properties should represent the state of an object and be named as nouns or noun phrases.
+  - Example: `OrderNumber`, `CustomerName`
+
+## 2. Naming Interfaces:
+- Use **PascalCase** and prefix interface names with the letter `I`.
+  - Example: `IOrderService`, `ICustomerRepository`
+
+- Interface names should represent capabilities or behaviors.
+  - Example: `IDisposable`, `IComparable`
+
+## 3. Naming Enums:
+- Use **PascalCase** for the enum type and enum values.
+  - Example:
+    ```csharp
+    enum OrderStatus
+    {
+        Pending,
+        Processing,
+        Shipped,
+        Delivered
+    }
+    ```
+
+## 4. Naming Namespaces:
+- Use **PascalCase**: Namespace names should be written in PascalCase, with the company name and product as the root.
+  - Example: `MyCompany.MyProduct.OrderProcessing`
+
+- Namespace names should be organized hierarchically, representing the logical structure of the code.
+  - Example: `System.Collections.Generic`
+
+## 5. Naming Constants:
+- Use **PascalCase**: Constant names should be in PascalCase, and they should be prefixed with `const`.
+  - Example: `const int MaxRetries = 5;`
+
+- Constants should represent fixed values that do not change during the execution of the program.
+
+## 6. Naming Event Handlers:
+- Use **PascalCase**: Event handler methods should follow PascalCase and be named with the "On" prefix followed by the event name.
+  - Example: `OnButtonClick()`, `OnFormSubmit()`
+
+## 7. Naming Exceptions:
+- Use **PascalCase**: Exception classes should follow PascalCase and end with the word `Exception`.
+  - Example: `FileNotFoundException`, `InvalidOperationException`
+
+## Example C# Naming Conventions:
+```csharp
+public class Customer
+{
+    // Private field with camelCase and underscore
+    private string _customerName;
+
+    // Public property with PascalCase
+    public string CustomerName 
+    { 
+        get { return _customerName; }
+        set { _customerName = value; }
+    }
+
+    // Method with PascalCase
+    public void ProcessOrder()
+    {
+        // Local variable with camelCase
+        int orderId = 123;
+    }
+}
+```
+
+Following these conventions will help ensure that your C# code is readable, maintainable, and adheres to industry standards.
