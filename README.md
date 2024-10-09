@@ -11,7 +11,7 @@ For Python code, we follow the guidelines outlined in PEP 8 for naming conventio
 - Methods and Variables: `snake_case`
 - Constants: `UPPER_SNAKE_CASE`
 
-For more details, refer to [Python Naming Conventions](./python_naming_conventions.md).
+For more details, refer to [Python Naming Conventions](./Python Convention.md).
 
 ---
 
@@ -23,7 +23,7 @@ For C# code, we use the following guidelines:
 - Variables: `camelCase`
 - Constants: `PascalCase` prefixed with `const`
 
-For more details, refer to [C# Naming Conventions](./csharp_naming_conventions.md).
+For more details, refer to [C# Naming Conventions](./C# Convention.md).
 
 ---
 
@@ -31,7 +31,7 @@ For more details, refer to [C# Naming Conventions](./csharp_naming_conventions.m
 
 We use descriptive comments to ensure the code is understandable. Specific tags like `TODO`, `FIXME`, `OPTIMIZE`, and `IMPORTANT` are used to mark important sections in the code. Each tag has a specific purpose.
 
-For more details, refer to [Comment Conventions](./comment_conventions.md).
+For more details, refer to [Comment Conventions](./Comment Convention.md).
 
 ---
 
@@ -45,7 +45,7 @@ Our commit messages use symbols to denote the type of commit:
 - `(Update)`: For updating functionality or files
 - `(!)`: For breaking changes
 
-For more details, refer to [Commit Message Conventions](./commit_conventions.md).
+For more details, refer to [Commit Message Conventions](./Commit Convention.md).
 
 ---
 
